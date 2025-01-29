@@ -11,7 +11,7 @@ a {
 }
 
 a:visited {
-    color: #ffcc53;
+    color: #fff;
 }
 
 :root {
@@ -52,7 +52,7 @@ body {
     width: 100%;
     height: 864px;
 
-    margin: auto;
+    margin: auto auto 112px auto;
 
     background-image: url("../image/hero/Image.png");
     background-repeat: no-repeat;
@@ -133,6 +133,7 @@ body {
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
     column-gap: 32px;
     row-gap: 76px;
@@ -171,6 +172,8 @@ body {
     justify-content: space-between;
 
     padding: 124px 64px 112px 64px;
+    margin-top: 112px;
+    margin-bottom: 112px;
 
     background-image: url("../image/contact/16.png");
     background-repeat: no-repeat;
@@ -228,6 +231,8 @@ body {
 
 .faq {
     width: 100%;
+
+    margin-bottom: 112px;
 
     color: #fff;
 }
@@ -311,6 +316,8 @@ body {
     justify-content: space-around;
 
     color: #fff;
+
+    margin-bottom: 112px;
 }
 .full__left-block {
 }
@@ -326,6 +333,7 @@ body {
 .full__desc {
     font-size: 18px;
 
+    margin-top: 32px;
     margin-bottom: 32px;
 }
 .full__label {
@@ -338,21 +346,123 @@ body {
 
 }
 
-.full-label {
-
-}
-
 .full-inp {
     width: 616px;
     height: 48px;
+
+    margin-bottom: 24px;
 }
 
 .full-btn {
     width: 139px;
     height: 48px;
 
+    margin-top: 24px;
+
     background-color: #ffcc53;
 
     font-size: 16px;
 }
 /* Full end */
+
+
+/* Footer start */
+
+.footer {
+    width: 100%;
+    height: 436px;
+
+    background-color: #FFCC53;
+}
+.footer__container {
+    width: var(--max-content-size);
+    height: 276px;
+    
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot__block-nav {
+
+
+    width: 487px;
+    height: 83px;
+}
+.foot-logo {
+    background-color: #000;
+}
+.foot-nav {
+    display: flex;
+    column-gap: 32px;
+}
+.foot-nav__elem {
+    color: #000;
+}
+
+.foot-nav__elem:visited {
+    color: #000;
+}
+
+.foot-email {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 16px;
+}
+.foot-email__heading {
+}
+.foot-email-form {
+}
+.foot-email-inp {
+    padding: 12px;
+
+    width: 228px;
+    height: 48px;
+
+    border: 1px solid #000;
+}
+
+.foot-email-btn {
+    width: 156px;
+    height: 48px;
+
+    padding: 12px 24px 12px 24px;
+
+    background-color: inherit;
+
+    border: 1px solid #000;
+}
+
+.footer__line {
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.footer__foot-link {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-link__container {
+    display: flex;
+    column-gap: 24px;
+}
+
+.foot__link {
+    color: #000;
+}
+
+.foot__link:visited {
+    color: #000;
+}
+
+
+.foot-link__rights {
+}
+
+/* Footer end */
