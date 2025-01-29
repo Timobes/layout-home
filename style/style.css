@@ -49,13 +49,14 @@ body {
 /* Hero start */
 
 .hero {
-    width: 100%;
+    /* width: 100%; */
+    width: var(--max-content-size);
     height: 864px;
 
     margin: auto auto 112px auto;
 
     background-image: url("../image/hero/Image.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-size: contain;
 }
 
@@ -64,6 +65,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    float: right;
 
     width: 50%;
     height: 864px;
@@ -171,7 +176,6 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
 
-    padding: 124px 64px 112px 64px;
     margin-top: 112px;
     margin-bottom: 112px;
 
@@ -179,6 +183,21 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.contact__container {
+    width: 100%;
+    /* height: 460px; */
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 124px 64px 112px 64px;
+}
+
+
 .left__contact-text {
     font-size: 48px;
     font-weight: bold;
