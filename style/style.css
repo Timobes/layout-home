@@ -59,7 +59,148 @@ body {
     color: #FFCC53;
 }
 
+#link:hover {
+    cursor: pointer;
+}
+
 /* Header end */
+
+/* Pop up start */
+
+
+.pop-up {
+    width: 100%;
+    margin: auto;
+    padding: 0 0 32px 64px;
+
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    background-color: #000;
+
+    column-gap: 32px;
+    row-gap: 16px;
+
+    color: #FFCC53;
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.visible {
+    display: flex;
+}
+
+.page__group {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 16px;
+
+    margin-top: 32px;
+
+    opacity: 0.5;
+}
+.page__heading {
+    font-family: 'roboto', serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.group__elem {
+    width: 296px;
+
+    display: grid;
+    grid-template-columns: 24px 252px;
+    column-gap: 12px;
+
+    padding: 8px 0 8px 0;
+}
+
+.group__elem:hover {
+    background-color: rgba(255, 204, 83, 0.3);
+    cursor: pointer;
+}
+
+.elem__heading {
+    font-family: 'roboto', serif;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: bold;
+}
+
+.elem__desc {
+    font-family: 'roboto', serif;
+    font-size: 14px;
+}
+
+.img__block {
+    padding: 68px 0 0 32px;
+
+    width: 592px;
+
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 16px;
+
+    opacity: 0.5;
+}
+.img__title {
+    font-family: 'roboto', serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.img__info {
+    padding: 8px 0 8px 0;
+
+    display: grid;
+    grid-template-columns: 160px 408px;
+    column-gap: 24px;
+}
+
+.img__info > img {
+    width: 160px;
+    height: 105px;
+
+    margin-bottom: 16px;
+}
+.article__title {
+    margin-bottom: 4px;
+
+    font-family: 'roboto', serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.article__desc {
+    margin-bottom: 8px;
+
+    font-family: 'roboto', serif;
+    font-size: 14px;
+}
+.article__link {
+    text-decoration: underline;
+    color: #FFCC53;
+}
+
+a.article__link:visited {
+    color: #FFCC53;
+}
+
+.img__link {
+    color: #FFCC53;
+}
+
+.img__link:visited {
+    color: #FFCC53;
+}
+
+.link:hover {
+    cursor: pointer;
+}
+
+
+/* Pop up end */
 
 /* Hero start */
 
@@ -382,7 +523,6 @@ body {
 .full__label {
     display: flex;
     flex-direction: column;
-
 }
 
 .full-label {
